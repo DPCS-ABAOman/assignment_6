@@ -1,0 +1,26 @@
+public class Airplanes {
+String _callSign;
+String _regNo;
+String _type;
+private int Salary; 
+private int ID; 
+
+
+
+
+public int callSign() { 
+	return this.callSign; 
+}
+
+public int getID() { 
+	return this.ID; 
+}
+
+public void regNo(int s) { 
+	this.regNo = s; 
+}
+
+public void setID(int id) { 
+	this.ID = id; 
+}
+}
