@@ -1,10 +1,22 @@
+
+//MARCUS
+
 package assignment_6_package;
 
 public class Aircraft {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
-	}
+		Aircraft_blueprint o = new Aircraft_blueprint() ;
+		
+		o.setName("omanAir");
+		o.callSign = "om";
+		o.regNo= 4324;
+		o.type = "Boeing";
+		
+		o.setCode(69) ;
+		System.out.println ( o.getCode(69));
+		
+		}
 
 }
