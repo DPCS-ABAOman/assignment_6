@@ -21,18 +21,19 @@ public class Aircraft_blueprint {
 	return this.setCode(x);	
 	}
 	public String getName() {
-		return this.getName();
+		return this.name; // see this example
 	
 	}
 	public String setName(String s) {
-		return this.setName (s);
+		return this.setName (s); // check this line , you are returning the function itself?! 
 	}
 	public String getDestination() {
-		return this.getDestination();
+		return this.getDestination(); // you have to returm the variable , see the example for getName() 
 		
 	}	
 	public String printDetails() {
-		return this.printDetails();
+		return this.printDetails(); // you are returning the function and not the variable in question 
+			// also the return type should be void here 
 	}
 		
 	
