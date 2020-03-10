@@ -1,45 +1,41 @@
-package myTest;
+package week3;
 
 public class Aircraft {
-	// TODO Auto-generated method stub
-			// main method
-	public int callSign;
-	public int regNo;
-	public int type; 
-	
-	
-	private int Code; 
-	private String pilotName; 
-	private String destination; 
-	
-	public Aircraft (int c, int r, int t) {
-	this.callSign = c; 
-	this.regNo = r;
-	this.type = t;
-	
-	}
-		
-	public int getCode() { 
-		return this.Code; 
-	}
 
-	public void setCode(int C) { 
-		this.Code = C; 
+	public String callSign ;
+	public String regNO ;
+	public String type;
+	private int transpoderCode;
+	private String pilotName;
+	private String destination;
+	
+	public Aircraft(int c, int r, int t) {
+		this.callSign = "c";
+		this.regNO = "r";
+		this.type = "t";
 	}
-
+	public int gettranspoderCode() {
+		return this.transpoderCode;
+}
+	public void settranspoderCode(int s) {
+		this.transpoderCode = s;
+	}
 	public String getpilotName() {
 		return this.pilotName;
 	}
-	
-	public void setpilotName(String N) {
-		this.pilotName = N;
-	}
-	
-	public String getdestination() {
+	public void setpilotName(String p ) {
+		 this.pilotName = p;
+			}
+	public String setdestination() {
 		return this.destination;
 	}
-	
-	
-	
-	
+	public void getdestination(String d) {
+		this.destination =d;
+	}
+	public void printDetails() {
+		System.out.println();
+			}
+	public void Aircraft() {
+		System.out.println();
+	}
 }
