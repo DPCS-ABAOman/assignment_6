@@ -10,7 +10,7 @@ public class aaairplane {
 	
 	
 	private int Code; 
-	private String pilotName; 
+	private String pilotname; 
 	private String destination; 
 	
 	public void Aircraft (int c, int r, int t) {
@@ -21,7 +21,7 @@ public class aaairplane {
 	}
 		
 	public int getCode() { 
-		return this.Code; 
+		return this.Code; fdfs
 	}
 
 	public void setCode(int C) { 
@@ -29,7 +29,7 @@ public class aaairplane {
 	}
 
 	public String getpilotName() {
-		return this.pilotName;
+		return this.pilotname;
 	}
 	
 	public void setpilotName(String N) {
