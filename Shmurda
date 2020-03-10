@@ -1,0 +1,78 @@
+package objects;
+
+
+public class aaairplane {
+	// TODO Auto-generated method stub
+			// main method
+	public int callSign;
+	public int regNo;
+	public int type; 
+	
+	
+	private int Code; 
+	private String pilotName; 
+	private String destination; 
+	
+	public void Aircraft (int c, int r, int t) {
+	this.callSign = c; 
+	this.regNo = r;
+	this.type = t;
+	
+	}
+		
+	public int getCode() { 
+		return this.Code; 
+	}
+
+	public void setCode(int C) { 
+		this.Code = C; 
+	}
+
+	public String getpilotName() {
+		return this.pilotName;
+	}
+	
+	public void setpilotName(String N) {
+		this.pilotName = N;
+	}
+	
+	public String getdestination() {
+		return this.destination;
+	}
+  
+  
+  
+//Main function
+package objects;
+import java.util.Scanner;
+
+public class boxarray {
+
+	public static void main(String[] args) {
+	Box[] boxes = new Box[3];  //array of objects
+	
+	Scanner pop = new Scanner(System.in);   //input object
+	
+	int x;	 //store input
+	int y;
+	int z;
+	int kg;
+	
+	for(int i = 0; i < boxes.length; i++) {
+	System.out.println("Enter the width: \n");
+	x = pop.nextInt(); //store input as int
+	System.out.println("Enter the length:\n");
+	y = pop.nextInt();
+	System.out.println("Enter the height:\n");
+	z = pop.nextInt();
+	System.out.println("Enter the weight:\n");
+	kg = pop.nextInt();
+	
+	
+	
+	boxes[i] = new Box(x,y,z,kg);
+	System.out.println("This box has a surface area of: \n" +boxes[i].calcSA());
+	
+}
+}
+}
