@@ -13,9 +13,8 @@ public class Aircraft {
 		o.callSign = "om";
 		o.regNo= 4324;
 		o.type = "Boeing";
-		
-		o.setCode(69) ;
-		System.out.println ( o.getCode(69));
+		o.setCode(60) ;
+		System.out.println ( o.getCode(transpoderCode));
 		
 		}
 

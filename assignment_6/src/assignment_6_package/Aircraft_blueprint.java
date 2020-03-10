@@ -14,26 +14,25 @@ public class Aircraft_blueprint {
 		return this.Aircraft();
 	}
 	public int getCode(int i) {
-		return this.getCode(i);
+		return this.transpoderCode;
 	}
 
-	public int setCode(int x) {
-	return this.setCode(x);	
-	}
-	public String getName() {
-		return this.name; // see this example
+	public void setCode(int transpoderCode) {
 	
 	}
-	public String setName(String s) {
-		return this.setName (s); // check this line , you are returning the function itself?! 
+	public String getName() {
+		return this.getName();
+	
+	}
+	public void setName(String s) {
+		
 	}
 	public String getDestination() {
-		return this.getDestination(); // you have to returm the variable , see the example for getName() 
+		return this.getDestination();
 		
 	}	
 	public String printDetails() {
-		return this.printDetails(); // you are returning the function and not the variable in question 
-			// also the return type should be void here 
+		return this.printDetails();
 	}
 		
 	
