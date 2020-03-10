@@ -1,45 +1,51 @@
-package myTest;
+package abhinav;
 
 public class Aircraft {
-	// TODO Auto-generated method stub
-			// main method
-	public int callSign;
-	public int regNo;
-	public String type = "430N"; // make an array to put all "types"
+
+
+
+	String callSign;
+	int RegNo;
+	String type;
+	private String transponderCode;
+	private String pilotName;
+	private String destination;
 	
-	
-	private int Code; 
-	private String pilotName; 
-	private String destination; 
-	
-	public Aircraft (int c, int r, String t) {
-	this.callSign = c; 
-	this.regNo = r;
-	this.type = t;
-	
-	}
+	public Aircraft(String s, int r, String t1, String t, String p, String d) {
 		
-	public int getCode() { 
-		return this.Code; 
-	}
-
-	public void setCode(int C) { 
-		this.Code = C; 
-	}
-
-	public String getpilotName() {
-		return this.pilotName;
-	}
-	
-	public void setpilotName(String N) {
-		this.pilotName = N;
-	}
-	
-	public String getdestination() {
+		this.callSign= s;
+		this.RegNo= r;
+		this.type= t1;
+		this.transponderCode= t;
+		this.pilotName= p;
+		this.destination= d;}
+		
+		public String getCode() {
+			return this.transponderCode;
+		}
+			
+			public String getName() {
+				return this.pilotName;
+				}
+			
+			public String getDestination() {
 		return this.destination;
+		}
+			
+			public void setCode(String z) {
+				this.transponderCode=z;
+			}
+			
+				public void setName(String y) {
+					this.pilotName=y;
+				}
+			
+			
 	}
-	
-	
-	
-	
-}
+
+
+
+
+
+
+
