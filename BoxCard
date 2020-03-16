@@ -1,0 +1,32 @@
+package Box;
+
+public class card {
+	public int size;
+	public int density;
+	public int length;
+    public int volume;
+    public int mass;
+    public int width;
+	public int height;
+
+	public card (int s,int p,int v,int m,int l,int w,int h) {
+		
+
+		
+	this.size=s;
+	this.density=p;
+    this.volume=v;
+    this.length=l;
+    this.mass=m;
+    
+    
+}
+		  
+ p= m/v;
+ public int calcdensity () {
+	 return mass/volume; }
+ 
+ public int calcVol () {
+	 return height*width*length; }	                                                                                                                                              
+	
+}
