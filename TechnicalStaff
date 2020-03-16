@@ -1,0 +1,31 @@
+package AppleGeniusBar;
+
+public class TechnicalStaff {
+	public class Employee2 {
+		String TechnicalJob;
+		private int commission; {
+			 
+			
+			}
+			
+			public int getcommission() { 
+				return this.commission; 
+			}
+
+			
+		
+		
+
+		public void commission(int c) { 
+			this.commission = c; 
+		}
+		
+		
+	
+		}
+		
+		
+		
+		{
+		}
+		}
