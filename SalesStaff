@@ -1,0 +1,23 @@
+package AppleGeniusBar;
+
+public class saleStaff {
+	 
+
+	private int numberofSales;
+	private int getCommission; 
+	 
+	public int salesCommission() { 
+		return this.salesCommission(); 
+	}
+	
+
+
+	public void setComission(int sC) { 
+		this.getCommission = sC; 	
+	}
+	
+	public int getcommission() { 
+		return this.salesCommission(); 
+	}
+}
+
