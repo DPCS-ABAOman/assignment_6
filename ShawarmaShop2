@@ -1,0 +1,37 @@
+import javax.swing.JOptionPane;
+public class Shawarmas {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    
+		String userInputString;
+		String  userName;
+		 int userid;
+		 double userHourlyPay;
+	     double userhours;
+	    
+	    
+	    userName =JOptionPane.showInputDialog("Who's Salary is this");
+	    userInputString =JOptionPane.showInputDialog("Enter id number" + userName+":");
+		userid = Integer.parseInt( userInputString);
+		userInputString=JOptionPane.showInputDialog("Enter hourly pay of "+ userName+":");
+		userHourlyPay = Double.parseDouble( userInputString);
+		userInputString =JOptionPane.showInputDialog("Enter hours worked");
+		userhours =Double.parseDouble( userInputString);
+		
+		
+		TurkishCorner WeeklySalary1 = new TurkishCorner(userName,userid  );
+   WeeklySalary1.setHourlyPay( userHourlyPay);
+   WeeklySalary1.sethours(userhours);
+   String.format("% has a gross pay of $%,.2f",WeeklySalary1.getName(),WeeklySalary1.calculateWeeklySalary());
+   JOptionPane.showMessageDialog( null,outputString() );
+	
+	}
+
+	private static Object outputString() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+
+}
