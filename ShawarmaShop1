@@ -1,0 +1,67 @@
+public class TurkishCorner {
+
+	private String name;
+	private int id;
+	private double HourlyPay;
+    private double hours;
+    
+    public String getName(){
+    	return name ;
+    }
+	
+public int getid(){
+	return id;
+	
+}
+
+public double getHourlyPay() {
+	return HourlyPay;
+	
+	
+}
+	public double gethours() {
+		return hours;
+	}	
+	
+public void setName (String nameGiven){
+	name= nameGiven;
+}
+
+public void setid(int idGiven){
+	id= idGiven;
+}
+public void setThisWeeksSalary(double HourlyPayGiven) {
+	HourlyPay= HourlyPayGiven;
+	
+}
+public void sethours (double hoursGiven){
+	hours = hoursGiven;
+	
+}
+public double calculateWeeklySalary() {
+	return HourlyPay * hours;
+}
+
+public TurkishCorner(String nameGiven, int idGiven){
+	name= nameGiven;
+	id= idGiven; 
+	HourlyPay = $(11,15,20);
+	hours = 0;
+	
+}
+private double $(int i, int j, int k) {
+	// TODO Auto-generated method stub
+	return 0;
+}
+{
+	
+
+{
+}
+} {
+}
+public void setHourlyPay(double userHourlyPay) {
+	// TODO Auto-generated method stub
+	
+}
+}
