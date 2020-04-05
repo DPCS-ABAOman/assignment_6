@@ -10,17 +10,17 @@ public class Kitchen {
 	
 	int Salary; // isn't the salary a unique quantity (that is hardcoded) for each type of employee? 
 	
-	public Kitchen(int ID, String s, int h, int sa) {
+	public Kitchen(int ID, String s, int h, int sa) { //Constructor for the object type kitchen with given parameters
 		
 		this.ID=ID;
-		this.Status=s;
+		this.Status=s;   //gives contructor variables a place to store data
 		this.Hours=h;
 		this.Salary=sa;
 		
 	}
 	
 	
-	public int Calcsal() {
+	public int Calcsal() {. //method for calculating salary
 		return (this.Hours*this.Salary);
 	}
 	
