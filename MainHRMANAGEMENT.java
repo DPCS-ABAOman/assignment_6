@@ -9,8 +9,8 @@ public class MainHRMANAGEMENT {
 		
 		Scanner scan= new Scanner (System.in);
 		
-		int T;//Total weekly wage
-		int ID;//ID
+		int T;//Total weekly wage  || Mr Nik: these values should really be initialized inside each object 
+		int ID;//ID 
 		int s;//Status of employee
 		int h;//hours worked per week
 		int sa;//Salary per hour
@@ -22,7 +22,7 @@ public class MainHRMANAGEMENT {
 		    s= scan.nextInt();
 		    
 		    if(s==2);  //Tells system that if user enter 2(kitchen worker) then it should the hourly salary to 11 and so on for other workers
-		    sa=11;
+		    sa=11; // Mr Nik: i see what you are doing with the selection statement but it won't work firstly because it is not blocked correctly {} 
 		    if(s==3);  
 		    sa=15;
 		    if(s==4);   //The problem I am having could relate to this section of code. When user inputs type of employee, the code is not recognising the salary amount it should be using and always defaults to using $20/h as salary
@@ -35,7 +35,7 @@ public class MainHRMANAGEMENT {
 			h= scan.nextInt(); //Saves no. of hours employee work per week entered by user
 		
 			if(h>50); //If user enter weekly hours greater than max (50) then salary should be calculated using the below formula
-			T= (sa*50)+(20*h-1000);
+			T= (sa*50)+(20*h-1000); // Mr Nik: these items of code are functional but they need to go inside your class 
 			
 			if(h<=50); //If user enters hours which is less than or equal to max hours per week, salary should be calculated with below formula
 			T= sa*h;
