@@ -4,54 +4,88 @@ public class MainHRMANAGEMENT {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+int w;
+int d;
+int t;
 
-		Kitchen[] myemployee= new Kitchen[5];  //initialization of object employee, ignore object type being called kitchen
+	Scanner read= new Scanner(System.in);//Initializing scanner
+
+	System.out.println("Please enter how many kitchen workers you have");
+	
+	w= read.nextInt();//record how many kitchen workers are needed
+	
+	Kitchen[]kemployee= new Kitchen[w]; //Initializes array of kitchen workers with n workers
+	
+	for(int i=0; i<kemployee.length;i++) { 
 		
-		Scanner scan= new Scanner (System.in);
+		System.out.println("Enter the ID of your kitchen employee ");
+		d= read.nextInt();  //Saves Employee ID
 		
-		int T;//Total weekly wage  || Mr Nik: these values should really be initialized inside each object 
-		int ID;//ID 
-		int s;//Status of employee
-		int h;//hours worked per week
-		int sa;//Salary per hour
+		System.out.println("Enter how many hours the employee works per week");
+		t= read.nextInt();  //Saves employee hours per week worked
+		
+		kemployee[i]=new Kitchen(d,t); //Saves ID and hours per week in array kemployee
+	
+	}
+	
+	for(int i=0; i<kemployee.length; i++) {  //loops through data recieved for n kitchen workers and print their details out to command line
+		kemployee[i].printdetails();
+	}
+	
+	
+	
+System.out.println("Please enter how many waiter workers you have"); //Same process for waiter workers
+	
+	w= read.nextInt();
+	
+	Waiter[]wemployee= new Waiter[w];
+	
+	for(int i=0; i<wemployee.length;i++) {
+		
+		System.out.println("Enter the ID of your waiter employee ");
+		d= read.nextInt();
+		
+		System.out.println("Enter how many hours the employee works per week");
+		t= read.nextInt();
+		
+		wemployee[i]=new Waiter(d,t);
+	
+	}
+	
+	for(int i=0; i<wemployee.length; i++) {
+		wemployee[i].printdetails();
+	}
+	
+	
+	
+System.out.println("Please enter how many management workers you have"); //Same process for management workers
+	
+	w= read.nextInt();
+	
+	Management[]memployee= new Management[w];
+	
+	for(int i=0; i<memployee.length;i++) {
+		
+		System.out.println("Enter the ID of your management employee ");
+		d= read.nextInt();
+		
+		System.out.println("Enter how many hours the employee works per week");
+		t= read.nextInt();
+		
+		memployee[i]=new Management(d,t);
+	
+	}
+	
+	for(int i=0; i<memployee.length; i++) {
+		memployee[i].printdetails();
+	}
+
+	System.out.println("THANKS FOR USING EMPLOYEE WAGE CALCULATOR!:)");	
 		
 		
-		for(int i=0;i<myemployee.length;i++) {
-			
-			System.out.println("Enter employee status: if you want kitchen worker enter 2, Waiter enter 3, Management enter 4: \n");
-		    s= scan.nextInt();
-		    
-		    if(s==2);  //Tells system that if user enter 2(kitchen worker) then it should the hourly salary to 11 and so on for other workers
-		    sa=11; // Mr Nik: i see what you are doing with the selection statement but it won't work firstly because it is not blocked correctly {} 
-		    if(s==3);  
-		    sa=15;
-		    if(s==4);   //The problem I am having could relate to this section of code. When user inputs type of employee, the code is not recognising the salary amount it should be using and always defaults to using $20/h as salary
-		    sa=20;      // For eg: if user enters employee type 2 (kitchen) and other required info, the code calculates weekly wage for employee type 4 (management, management has $20 salary) and not kitchen.
-			
-			System.out.println("enter employee ID for worker : \n");
-			ID= scan.nextInt(); //Saves employee ID entered by user
-			
-			System.out.println("enter employee no. of hours: \n");
-			h= scan.nextInt(); //Saves no. of hours employee work per week entered by user
 		
-			if(h>50); //If user enter weekly hours greater than max (50) then salary should be calculated using the below formula
-			T= (sa*50)+(20*h-1000); // Mr Nik: these items of code are functional but they need to go inside your class 
-			
-			if(h<=50); //If user enters hours which is less than or equal to max hours per week, salary should be calculated with below formula
-			T= sa*h;
-			
-			
-			
-			
-		    
-			System.out.println("Your total weekly wage is:" +T);
-			System.out.println("Your employee ID is:" +ID);     // Outputs all details required
-		    System.out.println("Your employee status type is:" +s);
-		    System.out.println("The no. of hours your employee work a week is:" +h);
-			System.out.println("Thanks for using weekly salary calculator");
-			
 		
-		}
+		
 		
 	}
 

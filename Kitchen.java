@@ -1,31 +1,32 @@
 package HRmanagement;
 
-public class Kitchen {
-
-	int ID; // the id attribute would be a generic attribute for all employee types 
+public class Kitchen extends EMPLOYEE {
+ 
 	
-	String Status; // what is the purpose of the Status? wouldn't it be evident by the class identifier? 
+	public Kitchen(int ID, int h) { //Constructor for Kitchen class
+		super(ID,h); //inherites common properties from super class (super class constructor)
+	}
 	
-	int Hours;
+	int s= 11; //salary for kitchen worker
 	
-	int Salary; // isn't the salary a unique quantity (that is hardcoded) for each type of employee? 
-	
-	public Kitchen(int ID, String s, int h, int sa) { //Constructor for the object type kitchen with given parameters
+	public int getSal() {  //method to calculate weekly salary for kitchen worker
+		if(this.hours>50) {
+		return((s*50)+(20*this.hours-1000));
 		
-		this.ID=ID;
-		this.Status=s;   //gives contructor variables a place to store data
-		this.Hours=h;
-		this.Salary=sa;
+	}
+	else {    //if overtime does not occur this method will be performed
+		return (s*this.hours);
 		
+	   }
 	}
 	
 	
-	public int Calcsal() {. //method for calculating salary
-		return (this.Hours*this.Salary);
+	public void printdetails() { //method to print details of kitchen worker
+		System.out.println("Employee ID is: \n" +this.ID);
+		System.out.println("Hours employee works a week: \n" +this.hours);
+		System.out.println("Employee status:Kitchen");
+		System.out.println("Weekly wage is: \n" +this.getSal());
 	}
-	
-	
-	
 	
 	
 	
